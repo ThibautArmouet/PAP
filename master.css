@@ -177,6 +177,14 @@ top: 90%;
   top: 130%;
   transform: rotate(187deg);
 }
+.blob3{
+
+right: 47%;
+width: 62%;
+position: absolute;
+top: 148%;
+
+}
 }
 
 @media (max-width: 800px) {
@@ -329,7 +337,7 @@ color: #FFFF;
 .herotarif{
   height: 650PX;
   width: 100%;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(36, 60, 72, 0.9) 0%, #243C48 100%);
+  background-image: url(image/herogalleri.png);
 }
 
 .container_card{
@@ -381,7 +389,7 @@ border-radius: 20px 20px 0px 20px;
 
 .container_option{
   width: 100%;
-  height: 1004px;
+  height: 500px;
 }
 
 .partie1{
@@ -392,30 +400,43 @@ border-radius: 20px 20px 0px 20px;
 }
 
 .partie2{
-width: 50%;
-height: 165px;
-margin: 188px 0px 0px 18%;
+width: 349px;
+height: 333px;
+
 }
 
 .title_tarif{
-  font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 36px;
-text-transform: uppercase;
-color: #BFA75E;
+
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.235em;
+  color: #99A665;
+
 }
 
-.column{
-  margin: 42px 118px 0px 118px;
-  column-count: 3;
-  column-gap: 195px;
-  font-family: helvetica;
+.baseline{
+  font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #99A665;
+}
+
+.illu{
+  width: 594px;
+height: 495px;
+margin-left: 143px;
+}
+
+.columnflex{
+display: flex;
+height: 495px;
+align-items: center;
+justify-content: space-between;
 }
 
 .description_tarif{
@@ -427,6 +448,28 @@ font-size: 16px;
 line-height: 19px;
 }
 
+.tarifphoto{
+  width: 448px;
+height: 410px;
+border-radius: 20px 20px 20px 0px;
+object-fit: cover;
+margin-left: 350px;
+z-index: 20;
+}
+
+.tariflex{
+  display: flex;
+  margin-top: 193px;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 257px;
+  margin-bottom: 193px;
+}
+
+.option{
+  width: 469px;
+height: 225px;
+}
 /*finpagetarfis*/
 
 /*pagegalerie*/
@@ -787,3 +830,67 @@ border-radius: 20px 20px 0px 20px;
   }
 }
 /*FIN MENUBURGER*/
+
+a {
+
+  text-decoration: none;
+	color: #fff;
+	font-size: 11px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	position: relative;
+  -webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+  padding: 5px;
+}
+a:after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	background-color: #99A665;
+	width: 0;
+	left: 50%;
+	bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  	transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+a:hover {
+	color: #99A665;
+}
+a:hover:after {
+	width: 80%;
+}
+
+
+.footer{
+  padding-top: 34px;
+}
+.footer_title{
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 19px;
+line-height: 22px;
+
+margin-left: 8%;
+margin-bottom: 16px;
+color: #FFFFFF;
+}
+
+.liens_footer{
+  margin-left: 8%;
+margin-bottom:  3px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
